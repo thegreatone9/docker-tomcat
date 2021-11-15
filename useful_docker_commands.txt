@@ -1,0 +1,5 @@
+docker build -t simple_project .
+docker run -d -p 8080:8080 simple_project
+docker exec -it container-id /bin/bash
+docker rmi simple_project -f
+docker logs -ft container-id 
